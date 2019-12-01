@@ -1,5 +1,5 @@
-# Leibniz
-A C++ command line tool to estimate Pi using leibniz's formula.
+# Leibnitz
+A C++ command line tool to estimate Pi using leibnitz's formula.
 
 # Installation
 ```
