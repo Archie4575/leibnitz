@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <cmath>
 
 /*
@@ -21,7 +22,8 @@ int main (int argc, char **argv ) {
 			cout << ceil(progress) << "%\r"; // Progress display
 			cout.flush();
 		}
-		cout << "\nPi: " << pi*4 << "\n";
+		cout << "\nPi: ";
+        std::cout << std::setprecision(16) << pi*4.0 << "\n";
 	} else {
 		cout << "Usage: leibnitz <repitions>\n";
 	}

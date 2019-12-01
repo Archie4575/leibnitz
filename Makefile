@@ -3,6 +3,7 @@ CFLAGS=-c -Wall
 
 all: leibnitz
 	sudo cp leibnitz /usr/local/bin
+	make clean
 
 leibnitz: main.o
 	$(CC) main.o -o leibnitz
