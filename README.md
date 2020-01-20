@@ -2,8 +2,8 @@
 A C++ command line tool to estimate Pi using leibnitz's formula.
 
 ## What is leibnitz's formula?
-Gottfried Wilhelm von Leibnitz was prominent German polymath, who lived from 1646-1716.
-He can up with the following formula for π:
+Gottfried Wilhelm von Leibnitz was a prominent German polymath, who lived from 1646-1716.
+He came up with the following formula for π:
 
 ![Leibnitz pattern](https://wikimedia.org/api/rest_v1/media/math/render/svg/fab3e3e4febf987b57159d81fd47995fb0af1240)
 
