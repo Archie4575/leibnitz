@@ -5,6 +5,10 @@
 /*
 -----------==| Leibnitz Formula for π |==-----------
 Usage: leibnitz <repitions>
+
+Example: leibnitz 10000
+3.1414926535900434137818515445417
+Accuracy: 99.99681690114612932218651764060269%
 */
 
 using namespace std;
@@ -12,21 +16,16 @@ using namespace std;
 int main (int argc, char *argv[]) {
 	if(argc == 2) { // Checks for one argument
 		long double pi {0.0};
-		double temp {0}, progress {0};
 		long n = atol(argv[1]); 
 		for (double k = 0; k < n; k++) { // Repeat 'n' times, adding to pi each time
-			//temp = pow(-1,k);         
-			//temp /= (2 * k) + 1; 
-			//pi += temp;
 			pi += (pow(-1, k) / (2 * k + 1));
-			progress = k / n * 100;
-			cout << ceil(progress) << "%\r"; // Progress display
-			cout.flush();
+			std::cout << std::setprecision(32) << pi*4.0 << "\r"; // Live calculation
+			std::cout.flush();
 		}
-		cout << "\nPi: ";
-        	std::cout << std::setprecision(32) << pi*4.0 << "\n";
+		std::cout << std::setprecision(32) << pi*4.0 << "\n"; // Final display
+		std::cout << "Accuracy: " << std::fixed << abs((pi*4.0)/3.1415926535897932384626433832795)*100.0 << "%\n";
 	} else {
-		cout << "Usage: leibnitz <repitions>\n";
+		std::cout << "Usage: leibnitz <repitions>\n";
 	}
 	return 0;
 }
