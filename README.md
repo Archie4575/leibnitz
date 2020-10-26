@@ -25,9 +25,9 @@ $ make all
 `$ leibnitz <repetitions>`
 ### Example
 ```
-$ leibnitz 1000
-100%
-Pi: 3.14059
+$ leibnitz 10000000
+3.1415925535897932545023603090328  |  100%
+Accuracy: 99.99999681690114257393009467023148%
 ```
 
 ## Update
